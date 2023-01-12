@@ -30,17 +30,4 @@ describe('Loan EMI details', () => {
         spy.restore();
     });
 
-  // it('checks the loan emi details',async()=>{
-  //   const el=await fixture(html `<loanEMI-details></loanEMI-details>`);
-  //   await el.shadowRoot.querySelector('.continue-btn').click();
-  // });
-  // it('cancels the loan emi details',async()=>{
-  //   const el=await fixture(html `<loanEMI-details></loanEMI-details>`);
-  //   await el.shadowRoot.querySelector('.cancel-btn').click();
-  // });
-
-  // it('should contain intRate', async() =>{
-  //   const el=await fixture(html`<lion-input label="${localize.msg('change-language:intRate')}"></lion-input>`);
-  //   await expect(el.label).to.match(/^[a-zA-Z\s]*$/);
-  // });
 });

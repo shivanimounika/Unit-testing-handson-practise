@@ -1,5 +1,4 @@
 import { html, fixture, expect } from '@open-wc/testing';
-// import { stub } from 'sinon';
 import Sinon, { stub } from 'sinon';
 import { Router } from '@vaadin/router';
 import '../src/SuccessAndError/Success.js';
@@ -32,7 +31,7 @@ describe('error screen', () => {
     it("_toHome() - called Router's go() to navigate to home Page", () => {
         const spy = Sinon.spy(Router, 'go');
         el._toHome();
-        expect(spy).to.have.called;
+        expect(spy).to.have.called; 
         expect(spy.firstCall.args[0]).to.equal('/')
         spy.restore();
     });
